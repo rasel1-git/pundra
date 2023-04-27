@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+int i,n,a[100],sum=0;
+printf("enter the range of array: ");
+scanf("%d",&n);
+printf("enter the element of array");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("after traversing ");
+for(i=0;i<n;i++)
+printf("%4d",a[i]);
+//sum
+for(i=0;i<n;i++)
+sum=sum+a[i];
+printf("\nthe sum of array %d",sum);
+}
+
