@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main(){
+int a[40],pos,i,n,m;
+printf("enter no of elements in array of as:");
+scanf("%d",&n);
+printf("enter %d elements are:",n);
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("\n After traversing .....\n");
+for(i=0;i<n;i++)
+printf("%4d\n",a[i]);
+printf("Enter the location where you wish to delete element\n");
+scanf("%d", &pos);
+if (pos>= n+1)
+printf("Deletion not possible.\n");
+else
+{
+for ( m= pos - 1; m < n - 1; m++)
+a[m] = a[m+1];
+printf("Resultant array:\n");
+for (m = 0; m < n - 1; m++)
+printf("%d\n", a[m]);
+}
+return 0;
+}
