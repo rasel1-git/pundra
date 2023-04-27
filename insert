@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+int main(){
+int i,n,a[100],pos=0,value;
+printf("enter the range of array: ");
+scanf("%d",&n);
+printf("enter the element of array");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("after traversing ");
+for(i=0;i<n;i++)
+printf("%4d",a[i]);
+printf("\nenter the position where cinsert new element: ");
+scanf("%d",&pos);
+printf("\nenter the value of new element: ");
+scanf("%d",&value);
+ n=n+1;
+for(i=n-1;i>=pos;i--)
+   a[i]= a[i-1];
+    a[pos-1]=value;
+printf("\nfinal array");
+for(i=0;i<n;i++)
+printf("%4d",a[i]);
+
+}
+
