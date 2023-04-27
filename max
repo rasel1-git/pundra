@@ -1,0 +1,23 @@
+
+
+
+#include<stdio.h>
+int main(){
+int i,n,a[100],max;
+printf("enter the range of array: ");
+scanf("%d",&n);
+printf("enter the element of array");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("after traversing ");
+for(i=0;i<n;i++)
+printf(" %4d ",a[i]);
+max=a[0];
+for(i=0;i<n;i++)
+if(max<a[i])
+max=a[i];
+printf("\nthe number %d",max);
+
+
+}
+
