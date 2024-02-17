@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    
+
+    <div class="main"> 
+        <h1>Sign</h1> 
+        <form action=""> 
+            <label for="first">First Name:</label> 
+            <input type="text" id="first" 
+                   name="first" 
+                   placeholder="Enter your first name" required> 
+  
+            <label for="last">Last Name:</label> 
+            <input type="text" id="last" 
+                   name="last" 
+                   placeholder="Enter your last name" required> 
+            <label for="last">Current Address : </label>
+                    
+                   <textarea cols="62" rows="5" placeholder="Current Address" value="address" required>  
+                   </textarea> 
+                   <label>   
+                    Roll :  
+                    </label>    
+                    <input type="text" name="phone" placeholder="Roll no." size="10"/ required>  
+            <label>   
+                        Phone :  
+                        </label>  
+                        <input type="text" name="country code" placeholder="Country Code"  value="+880" size="2"/>  
+                        <div>  
+                            <label>   
+                            Batch :  
+                            </label>   
+                            <select>  
+                            <option value="">1st</option>  
+                            <option value="">2nd</option>  
+                            <option value="">3rd</option>  
+                            <option value="">4th</option>  
+                            <option value="">5th</option>  
+                            <option value="">6th</option>  
+                            <option value="">7th</option>  
+                            </select>  
+                            </div> 
+                            <div>  
+                                <label>   
+                                Semester :  
+                                </label>   
+                                <select>  
+                                <option value="">1st</option>  
+                                <option value="">2nd</option>  
+                                <option value="">3rd</option>  
+                                <option value="">4th</option>  
+                                <option value="">5th</option>  
+                                <option value="">6th</option>  
+                                <option value="">7th</option>  
+                                </select>  
+                                </div>
+                                <label for="gender">Gender:</label> 
+                                <select id="gender" name="gender" required> 
+                                    <option value="male">Male</option> 
+                                    <option value="female">Female</option> 
+                                    <option value="other">Other</option> 
+                                </select> 
+                             
+            <label for="email">Email:</label> 
+            <input type="email" id="email" 
+                   name="email" 
+                   placeholder="Enter your email" required> 
+  
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" 
+                   id="dob" name="dob" 
+                   placeholder="Enter your DOB" required> 
+  
+            <label for="password">Password:</label> 
+            <input type="password" id="password" 
+                   name="password"
+                   placeholder="Enter your password"> 
+  
+             
+            <span id="pass"></span> 
+  
+    
+            <label for="password">Select Images:</label> 
+             <input type="file" name="img"> 
+  
+            <div class="wrap"> 
+                <button type="submit"> 
+                  Submit 
+                  </button> 
+            </div> 
+        </form> 
+    </div>
+    
+</body>
+</html>
